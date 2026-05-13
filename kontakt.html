@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <a href="index.html">Početna</a>
+    <a href="meni.html">Meni</a>
+    <a href="kontakt.html">Kontakt</a>
+</nav>
+
+<h1>Kontakt</h1>
+
+<p>Telefon: 3816499999</p>
+
+<h2>Pošalji poruku</h2>
+
+<input type="text" id="ime" placeholder="Poruka"><br><br>
+<button onclick="provera()">Pošalji</button>
+
+<p id="poruka"></p>
+
+<script>
+function provera() {
+    let ime = document.getElementById("ime").value;
+    let poruka = document.getElementById("poruka");
+
+    if (ime === "") {
+        poruka.innerText = "Unesi ime!";
+        poruka.style.color = "red";
+    } else {
+        poruka.innerText = "Poruka poslata!";
+        poruka.style.color = "green";
+    }
+}
+</script>
+
+</body>
+</html>

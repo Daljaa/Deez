@@ -1,0 +1,87 @@
+body {
+    font-family: "Courier New", monospace;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    background-image: url("images/drvo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+nav {
+    background: rgba(92, 51, 23, 0.9);
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+h1, h2 {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+p {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 10px auto;
+}
+
+.kafa {
+    display: inline-block;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.kafa img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.slika-levo {
+    position: fixed;
+    left: 30px;
+    top: 280px;
+}
+
+.slika-desno {
+    position: fixed;
+    right: 40px;
+    top: 200px;
+}
+
+.slika-levo img,
+.slika-desno img {
+    width: 450px;
+    height: auto;
+    border-radius: 15px;
+    border: 3px solid white;
+    box-shadow: 0 0 15px black;
+}
+.slika-levo img {
+    width: 550px;
+}
+
+.slika-desno img {
+    width: 450px;
+}
